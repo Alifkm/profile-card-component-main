@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  background-color: #19a2ae;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: -50% 200%, 150% -150%;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed;
+  font-family: "Kumbh Sans", sans-serif;
+  height: 100%;
+}
+
+html .container, body .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .card, body .container .card {
+  background-image: url("../images/bg-pattern-card.svg");
+  background-size: 100% 40%;
+  background-repeat: no-repeat;
+  background-color: #eaeaea;
+  border-radius: 10px;
+  display: block;
+  width: 400px;
+}
+
+html .container .card img, body .container .card img {
+  display: block;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 100px auto 20px auto;
+}
+
+html .container .card h1, body .container .card h1 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+html .container .card h1 span, body .container .card h1 span {
+  color: #6a6f81;
+  font-weight: 400;
+}
+
+html .container .card h2, body .container .card h2 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6a6f81;
+  margin-bottom: 20px;
+}
+
+html .container .card .extras, body .container .card .extras {
+  padding: 20px 20px 20px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html .container .card .extras h3, body .container .card .extras h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+html .container .card .extras h3 span, body .container .card .extras h3 span {
+  font-size: 12px;
+  color: #6a6f81;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 420px) {
+  html .container .card, body .container .card {
+    width: 325px;
+    background-size: 100% 35%;
+  }
+  html .container .card img, body .container .card img {
+    margin-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  html .container .card, body .container .card {
+    width: 250px;
+    background-size: 100% 35%;
+  }
+  html .container .card img, body .container .card img {
+    margin-top: 75px;
+  }
+}
+
+html footer, body footer {
+  text-align: center;
+}
